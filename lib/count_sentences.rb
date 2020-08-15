@@ -29,7 +29,7 @@ class String
   def count_sentences
     sentence_array = []
     self.split(".").push(sentence_array) || self.split("?").push(sentence_array) || self.split("!").push(sentence_array)
-    
+    binding.pry
     return sentence_array.length
   end
 end
